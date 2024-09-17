@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Wedding</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F5F5DC;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #E6C0A3;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        section {
+            margin: 40px 0;
+        }
+        section h2 {
+            font-size: 32px;
+            color: #E6C0A3;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .rsvp-form {
+            background-color: #FFF;
+            padding: 20px;
+            border: 2px solid #E6C0A3;
+            border-radius: 10px;
+        }
+        .rsvp-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .rsvp-form input, .rsvp-form select, .rsvp-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .rsvp-form button {
+            background-color: #E6C0A3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .rsvp-form button:hover {
+            background-color: #D8A47F;
+        }
+        footer {
+            background-color: #E6C0A3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Wedding</h1>
+        <p>Join us in celebrating our love at a beautiful destination wedding!</p>
+    </header>
+
+    <div class="container">
+
+        <!-- About the Wedding -->
+        <section id="about">
+            <h2>Welcome to Our Wedding</h2>
+            <p>We are so excited to celebrate our special day with you in [Location]! Please find all the important information here, and don’t forget to RSVP. We can’t wait to see you!</p>
+        </section>
+
+        <!-- Schedule -->
+        <section id="schedule">
+            <h2>Schedule of Events</h2>
+            <p><strong>Friday Afternoon:</strong> Arrival and Check-in</p>
+            <p><strong>Saturday:</strong> Ceremony at 4:00 PM, followed by reception</p>
+            <p><strong>Sunday Afternoon:</strong> Farewell Brunch and Departure</p>
+        </section>
+
+        <!-- Travel Information -->
+        <section id="travel">
+            <h2>Travel Information</h2>
+            <p>Our wedding will be held at [Wedding Venue], a stunning location in [Location]. The nearest airport is [Airport Name], and we recommend booking flights that arrive by Friday afternoon.</p>
+        </section>
+
+        <!-- Accommodation Information -->
+        <section id="accommodation">
+            <h2>Accommodation</h2>
+            <p>We have several on-site accommodations available at [Venue Name]. You can choose to stay by yourself, share accommodations, or book a room at a nearby hotel.</p>
+        </section>
+
+        <!-- RSVP -->
+        <section id="rsvp">
+            <h2>RSVP</h2>
+            <div class="rsvp-form">
+                <form action="https://your-server.com/submit-rsvp" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="attendance">Will you be attending?</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+
+                    <label for="arrival">Arrival Date:</label>
+                    <select id="arrival" name="arrival">
+                        <option value="Friday Afternoon">Friday Afternoon</option>
+                        <option value="Friday Evening">Friday Evening</option>
+                    </select>
+
+                    <label for="accommodation">Accommodation Preference:</label>
+                    <select id="accommodation" name="accommodation">
+                        <option value="on-site">Stay on-site by myself</option>
+                        <option value="share-on-site">Stay on-site and share accommodation</option>
+                        <option value="nearby-hotel">Stay at a nearby hotel</option>
+                    </select>
+
+                    <label for="diet">Do you have any dietary restrictions?</label>
+                    <textarea id="diet" name="diet" rows="4"></textarea>
+
+                    <button type="submit">Submit RSVP</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>FAQ</h2>
+            <p><strong>What should I wear?</strong> The dress code for the wedding is semi-formal. Please dress comfortably for the weather.</p>
+            <p><strong>Is transportation provided?</strong> We will provide shuttle services from nearby hotels to the wedding venue.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>If you have any questions, please reach out to us at [Your Email Address].</p>
+    </footer>
+
+</body>
+</html>
